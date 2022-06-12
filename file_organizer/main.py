@@ -18,7 +18,7 @@ list_of_directories = {
     'doc': ['.doc', '.docx', '.csv', '.xls', '.xlsx', '.ppt', '.pptx'],
     'audio': ['.mp3', '.wav', '.wma', 'acc'],
     'video': ['.mpeg', '.mp4'],
-    'exe': ['.exe', '.msi', '.apk']
+    'exe': ['.exe', '.msi', '.apk', '.deb']
 }
 
 file_format_dictionary = {
@@ -52,3 +52,4 @@ for entry in dir_entries:
     os.makedirs(target_directory, exist_ok=True)
     os.rename(file_path, target_directory/file_path.name)
        
+
